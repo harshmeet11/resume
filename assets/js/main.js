@@ -25,6 +25,7 @@
         if (xhr.status === 200) {
           // Replace the content of navbar-placeholder with the response content
           navbarPlaceholder.innerHTML = xhr.responseText;
+          navMenuSpy();
         } else {
           console.error("Failed to load navbar.html");
         }
@@ -304,27 +305,29 @@
   /**
    * Navmenu Scrollspy
    */
-  let navmenulinks = document.querySelectorAll(".navmenu a");
+  function navMenuSpy() {
+    let navmenulinks = document.querySelectorAll(".navmenu a");
 
-  function navmenuScrollspy() {
-    navmenulinks.forEach((navmenulink) => {
-      if (!navmenulink.hash) return;
-      let section = document.querySelector(navmenulink.hash);
-      if (!section) return;
-      let position = window.scrollY + 200;
-      if (
-        position >= section.offsetTop &&
-        position <= section.offsetTop + section.offsetHeight
-      ) {
-        document
-          .querySelectorAll(".navmenu a.active")
-          .forEach((link) => link.classList.remove("active"));
-        navmenulink.classList.add("active");
-      } else {
-        navmenulink.classList.remove("active");
-      }
-    });
+    function navmenuScrollspy() {
+      navmenulinks.forEach((navmenulink) => {
+        if (!navmenulink.hash) return;
+        let section = document.querySelector(navmenulink.hash);
+        if (!section) return;
+        let position = window.scrollY + 200;
+        if (
+          position >= section.offsetTop &&
+          position <= section.offsetTop + section.offsetHeight
+        ) {
+          document
+            .querySelectorAll(".navmenu a.active")
+            .forEach((link) => link.classList.remove("active"));
+          navmenulink.classList.add("active");
+        } else {
+          navmenulink.classList.remove("active");
+        }
+      });
+    }
+    window.addEventListener("load", navmenuScrollspy);
+    document.addEventListener("scroll", navmenuScrollspy);
   }
-  window.addEventListener("load", navmenuScrollspy);
-  document.addEventListener("scroll", navmenuScrollspy);
 })();

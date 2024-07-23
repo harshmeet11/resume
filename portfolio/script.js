@@ -55,24 +55,39 @@ document.addEventListener("DOMContentLoaded", function () {
           },
         });
 
-        //TODO: Turn this into a function
-        project.images.forEach((image) => {
-          var imageDiv = document.createElement("div");
-          imageDiv.classList.add("swiper-slide");
-          const img = document.createElement("img");
-          img.src = image;
-          img.alt = "Image";
-
-          imageDiv.appendChild(img);
-          imageWrapper.appendChild(imageDiv);
-        });
+        addImages(project.images, imageWrapper);
         swiper.update();
 
-        // Add Project Info
-        const projectDiv = document.createElement("div");
+        addProjectContent(project, portfolioContainer);
+      } else {
+        // Display message if project not found
+        portfolioDetails.innerHTML = "<p>Project not found.</p>";
+      }
+    })
+    .catch((error) => {
+      console.error("Error fetching JSON:", error);
+    });
+});
 
-        // Populate project details
-        projectDiv.innerHTML = `
+function addImages(images, imageWrapper) {
+  images.forEach((image) => {
+    var imageDiv = document.createElement("div");
+    imageDiv.classList.add("swiper-slide");
+    const img = document.createElement("img");
+    img.src = image;
+    img.alt = "Image";
+
+    imageDiv.appendChild(img);
+    imageWrapper.appendChild(imageDiv);
+  });
+}
+
+function addProjectContent(project, portfolioContainer) {
+  // Add Project Info
+  const projectDiv = document.createElement("div");
+
+  // Populate project details
+  projectDiv.innerHTML = `
                 <div
                     class="portfolio-info"
                     data-aos="fade-up"
@@ -100,14 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     </p>
                 </div>
             `;
-        // Append project div to portfolio container
-        portfolioContainer.appendChild(projectDiv);
-      } else {
-        // Display message if project not found
-        portfolioDetails.innerHTML = "<p>Project not found.</p>";
-      }
-    })
-    .catch((error) => {
-      console.error("Error fetching JSON:", error);
-    });
-});
+  // Append project div to portfolio container
+  portfolioContainer.appendChild(projectDiv);
+}

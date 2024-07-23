@@ -1,0 +1,99 @@
+{
+  "projects": [
+    {
+      "key": "pepsi",
+      "name": "Pepsi Supply Chain Assessment",
+      "class": "Supply Chain Management Strategies",
+      "description": "<ul><li>Conducted a comprehensive assessment of Pepsi’s supply chain operations.</li><li>Analyzed various components including procurement, logistics, and distribution, and provided actionable recommendations for optimization.</li></ul>",
+      "skills": "Supply Chain Analysis, Strategic Planning, Presentation Skills",
+      "tools": "Qualitative analysis, Powerpoint",
+      "images": [
+        "assets/img/portfolio/pepsi_1.png",
+        "assets/img/portfolio/pepsi_2.png"
+      ]
+    },
+    {
+      "key": "data-integration",
+      "name": "Data Integration in Supply Chain",
+      "class": "Operations Analysis",
+      "description": "Created an in-depth presentation on the importance of data integration in supply chain operations. Highlighted best practices, tools, and methodologies to enhance data flow and decision-making processes within the supply chain after analyzing various case studies.",
+      "skills": "Data Integration, Operations Management, Presentation Skills",
+      "tools": "PowerPoint, MS Excel",
+      "images": [
+        "assets/img/portfolio/data_integration_1.png",
+        "assets/img/portfolio/data_integration_2.png"
+      ]
+    },
+    {
+      "key": "ai",
+      "name": "Generative AI in Supply Chain",
+      "class": "Supply Chain Analytics",
+      "description": "Developed a report and presentation on the applications of generative AI in supply chain management. Explored the trailblazers, potential benefits, challenges, and future trends of integrating AI technologies in supply chain processes.",
+      "skills": "AI Applications, Supply Chain Analytics, Research and Reporting",
+      "tools": "MS Word, PowerPoint",
+      "images": [
+        "assets/img/portfolio/ai_1.png",
+        "assets/img/portfolio/ai_2.png"
+      ]
+    },
+    {
+      "key": "procurement",
+      "name": "Procurement and Supplier Scorecard Analysis",
+      "class": "Procurement and Global Sourcing",
+      "description": "Analyzed a business case involving Metalcraft’s procurement strategies and supplier performance using scorecards. Provided insights and recommendations to improve supplier relationships and procurement efficiency.",
+      "skills": "Procurement Strategies, Supplier Evaluation, Case Analysis",
+      "tools": "MS Word, PowerPoint",
+      "images": [
+        "assets/img/portfolio/procurement_1.png",
+        "assets/img/portfolio/procurement_2.png"
+      ]
+    },
+    {
+      "key": "lean-six-sigma",
+      "name": "Lean Six Sigma Practices at Home Depot",
+      "class": "Lean Six Sigma",
+      "description": "Conducted an analysis of Home Depot’s Lean Six Sigma practices. Identified key methodologies implemented, assessed their effectiveness, and suggested improvements.",
+      "skills": "Lean Six Sigma, Process Improvement, Data Analysis",
+      "tools": "MS Word, PowerPoint",
+      "images": [
+        "assets/img/portfolio/lean_six_sigma_1.png",
+        "assets/img/portfolio/lean_six_sigma_2.png"
+      ]
+    },
+    {
+      "key": "negotiations",
+      "name": "Group Negotiations Simulation",
+      "class": "Negotiations",
+      "description": "Participated in multiple rounds of mock group negotiations between a union and a manufacturing company. Focused on developing negotiation strategies, understanding stakeholder interests and achieving mutually beneficial outcomes.",
+      "skills": "Negotiation, Conflict Resolution, Strategic Communication",
+      "tools": "Role-Playing Simulations, MS Word",
+      "images": [
+        "assets/img/portfolio/negotiations_1.png",
+        "assets/img/portfolio/negotiations_2.png"
+      ]
+    },
+    {
+      "key": "yellow-cab",
+      "name": "Efficiency Analysis Using NYC Yellow Cab Data",
+      "class": "Supply Chain and Artificial Intelligence",
+      "description": "Conducted a business analysis using NYC yellow cab data to identify patterns and improve operational efficiency. Analyzed data to find trends related to ride durations, peak hours and routes.",
+      "skills": "Data Analytics, Business Intelligence, Operational Efficiency",
+      "tools": "Python, MS Excel, PowerPoint",
+      "images": [
+        "assets/img/portfolio/yellow_cab_1.png",
+        "assets/img/portfolio/yellow_cab_2.png",
+        "assets/img/portfolio/yellow_cab_3.png",
+        "assets/img/portfolio/yellow_cab_4.png"
+      ]
+    },
+    {
+      "key": "research-paper",
+      "name": "INDO-US TRADE RELATIONS: EFFECT OF CHANGE OF GOVERNMENT",
+      "class": "<b>Authors:</b> Dr. Raksha Thakur, Harshmeet Kaur Chawla, Neha Dua, Dr. Nidhi Sharma",
+      "description": "Abstract: International trade and trade relations are affected by the macro business environment including political and legal environment. India, being a democratic country, the government is elected by the people. Political parties have different ideologies which are reflected in the policies they make to support trade in the country. There is a significant role of government in determining the policies that affect the International trade and trade relations of a country. The USA has been one of the biggest trade partners of India for several years. This study was conducted to observe the pattern of Indo-US Import, Export and respective growth rate before and after the change of government in India in 2014 and to study its effect on India’s trade relations with the US.",
+      "skills": "Data Analytics, Data collection",
+      "tools": "SPSS, MS Word, MS Excel",
+      "images": ["assets/img/portfolio/research_paper.png"]
+    }
+  ]
+}

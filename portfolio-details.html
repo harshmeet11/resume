@@ -92,19 +92,21 @@
       <section id="portfolio-details" class="portfolio-details section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
-            <div class="col-lg-8" style="overflow: hidden">
+            <div class="col-lg-8" style="overflow: hidden; height: 65vh">
               <div
                 id="portfolio-image-container"
                 class="portfolio-details-slider swiper-container"
+                style="height: inherit"
               >
                 <div
                   class="swiper-wrapper align-items-center"
                   id="swiper-wrapper"
+                  style="height: 80% !important; width: 80%"
                 >
                   <!-- Slides will be dynamically added here -->
                 </div>
                 <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination" style="z-index: 999"></div>
               </div>
             </div>
 
@@ -117,8 +119,12 @@
       <!-- /Portfolio Details Section -->
     </main>
 
-    <footer id="footer" class="footer position-relative light-background">
-      <div class="container">
+    <footer
+      id="footer"
+      class="footer position-fixed light-background"
+      style="bottom: 0; width: 100%"
+    >
+      <div class="container" style="margin: 0 60px">
         <div class="copyright text-center">
           <p>
             © <span>Copyright</span>

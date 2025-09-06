@@ -1147,9 +1147,9 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+/* .portfolio-details .portfolio-details-slider img {
   width: 100%;
-}
+} */
 
 .portfolio-details .portfolio-details-slider .swiper-container {
   height: 100%;
